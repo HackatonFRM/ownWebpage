@@ -1,0 +1,63 @@
+.button{
+	width: 150px;
+	height: 46px;
+	position: relative;
+	margin: 10px 1px;
+	border-radius: 4px;
+	overflow: hidden;
+	color: rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+	line-height: 40px;
+	padding: 4px;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.28);
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover{
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
+}
+.button:active{
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.white{
+	background-color: #F0F0F0;
+	color: #201D2B;
+}.red{
+	background-color: #774650;
+}.green{
+	background-color: #50774C;
+}.blue{
+	background-color: #365970;
+}
+
+.disabled{
+	opacity: 0.75;
+	cursor: default;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.28);
+}.disabled:hover{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.28);
+}.disabled:active{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.dot {
+  height:2px;
+  width:2px;
+  border-radius:100%;
+  position:absolute;
+  z-index:0;
+  -webkit-animation:sploosh 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background:transparent;
+}
+
+@-webkit-keyframes sploosh {
+  0% {
+    box-shadow:0 0 0 0px rgba(0,0,0,.25);
+    background:rgba(0,0,0,.25);
+  }
+  100% {
+    box-shadow:0 0 0 100px rgba(0,0,0,0);
+    background:rgba(0,0,0,0);
+  }
+}
